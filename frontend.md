@@ -1,6 +1,6 @@
 # Frontend Development Guidelines
 
-Welcome to our evolving set of guidelines for frontend development within our organization. These guidelines are aimed at promoting consistency, readability, and best practices throughout our projects. 
+Welcome to our evolving set of guidelines for frontend development. These guidelines are aimed at promoting consistency, readability, and best practices throughout our projects. 
 Below are the current recommendations specific to frontend development:
 
 ## Immer for Array and Object Manipulation
