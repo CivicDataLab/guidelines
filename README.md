@@ -6,6 +6,7 @@ The guidelines cover various aspects of our development process, currently inclu
 These guidelines are not static; they will evolve as we learn from experiences, embrace new technologies, and refine our processes.
 
 ## Contributing
+
 We encourage all team members to actively contribute to this repository. If you have suggestions, improvements, or new guidelines to propose, follow these steps:
 
 1. Fork this repository to your GitHub account.
@@ -19,4 +20,5 @@ We encourage all team members to actively contribute to this repository. If you 
 Your contributions help maintain the quality and standardization of our projects. Thank you for your dedication!
 
 ## License
+
 This repository is licensed under the MIT License. Feel free to use, modify, and distribute the content in this repository while adhering to the terms of the license.
