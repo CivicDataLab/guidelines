@@ -1,28 +1,28 @@
-# Analytics
+# Guide to Setting Up Google Analytics in Next.js Projects
 
-This guide is to help setup google analytics in Nextjs projects. Aim is to log page views and certain events, when required.
+The purpose of this guide is to help you seamlessly log page views and track specific events whenever required.
 
-## Set up Google Analytics
+## Setting Up Google Analytics
 
-### Setup utility functions
+### Creating Utility Functions
 
-1. Create a new file `utils/ga.js` with the following code:
+1. Begin by creating a new file named `utils/ga.js` with the following code:
 
 ```js
-// log the pageview with their URL
+// Log the pageview with its URL
 export const pageview = (url) => {
   window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
     page_path: url,
   });
 };
 
-// log specific events happening.
+// Log specific events
 export const event = ({ action, params }) => {
   window.gtag('event', action, params);
 };
 ```
 
-2. Create a new component `GoogleAnalytics.tsx`
+2. Next, establish a new component called `GoogleAnalytics.tsx`:
 
 ```js
 import Script from "next/script";
@@ -33,7 +33,7 @@ const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
       async
       src={`https://www.googletagmanager.com/gtag/js? 
       id=${ga_id}`}
-    ></Script>
+    />
     <Script
       id="google-analytics"
       dangerouslySetInnerHTML={{
@@ -45,19 +45,19 @@ const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
           gtag('config', '${ga_id}');
         `,
       }}
-    ></Script>
+    />
   </>
 );
 export default GoogleAnalytics;
 ```
 
-### Add env variable
+### Adding an Environment Variable
 
-Add `NEXT_PUBLIC_GOOGLE_ANALYTICS` as variable in the `.env` file with the GTAG ID provided while setting up.
+In your .env file, introduce a new environment variable named `NEXT_PUBLIC_GOOGLE_ANALYTICS` with the provided GTAG ID during setup.
 
-### In pages directory (upto Next 12)
+### In the `pages` directory (up to Next 12)
 
-1. Import and use `pageview` function in the `pages/_app.tsx` file
+1. Open the `pages/_app.tsx` file and implement the following changes:
 
 ```js
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -78,7 +78,7 @@ export default MyApp;
 
 ```
 
-### In apps directory (Next 13+)
+### In the `apps` directory (Next 13+)
 
 1. Add the component in the root `layout.tsx` file
 
@@ -100,5 +100,24 @@ export default function RootLayout({
         </body>
       </html>
   );
+}
+```
+
+## Logging Custom Events
+
+In addition to tracking page views, Google Analytics enables you to log custom events. For instance, let's say you want to track the number of times users click the download button. Follow these steps:
+
+```js
+import { event } from '@/utils/ga';
+
+function handleDownload() {
+  // ... download logic
+
+  event({
+      action: 'download-dataset',
+      params: {
+        path: router.pathname,
+      },
+    });
 }
 ```
