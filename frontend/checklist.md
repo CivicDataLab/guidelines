@@ -9,3 +9,7 @@ To incorporate Google Analytics into your project, follow the instructions provi
 ## Efficient Font Loading
 
 Proper Font loading is crucial for any project, follow the instructions to do that correctly [in the guide](./fonts.md).
+
+## Generating and Submitting a Sitemap
+
+Boost your project's discoverability by generating a sitemap and submitting it to search consoles. Learn how to create and submit your sitemap [in this guide](./sitemap.md).
