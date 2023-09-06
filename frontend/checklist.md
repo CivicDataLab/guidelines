@@ -13,3 +13,7 @@ Proper Font loading is crucial for any project, follow the instructions to do th
 ## Generating and Submitting a Sitemap
 
 Boost your project's discoverability by generating a sitemap and submitting it to search consoles. Learn how to create and submit your sitemap [in this guide](./sitemap.md).
+
+## Implementing SEO Best Practices
+
+Enhance your dashboard's visibility and organic traffic by implementing SEO best practices. Find out how to optimize meta tags and improve search engine rankings [in this guide](./seo.md).
