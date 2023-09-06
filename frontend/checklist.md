@@ -8,7 +8,7 @@ To incorporate Google Analytics into your project, follow the instructions provi
 
 ## Efficient Font Loading
 
-Proper Font loading is crucial for any project, follow the instructions to do that correctly [in the guide](./fonts.md).
+Proper Font loading is crucial for any project; follow the instructions to do that correctly [in the guide](./fonts.md).
 
 ## Generating and Submitting a Sitemap
 
@@ -17,3 +17,7 @@ Boost your project's discoverability by generating a sitemap and submitting it t
 ## Implementing SEO Best Practices
 
 Enhance your dashboard's visibility and organic traffic by implementing SEO best practices. Find out how to optimize meta tags and improve search engine rankings [in this guide](./seo.md).
+
+## Addressing Common Accessibility Issues
+
+Ensure your website is accessible to all users by identifying and addressing common accessibility issues. Learn how to make your web content inclusive and user-friendly [in this guide](./accessibility.md).
