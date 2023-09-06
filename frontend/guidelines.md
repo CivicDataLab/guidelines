@@ -31,5 +31,3 @@ Every frontend engineer must utilize accessibility checker tooling to ensure our
 ## Note
 
 These guidelines are subject to updates and improvements as our development practices evolve. Always refer back to this document and stay informed about the latest changes to maintain code consistency and overall development efficiency.
-
-Remember, adherence to these guidelines contributes to building high-quality, maintainable, and accessible frontend applications across our organization. Happy coding!
